@@ -1,0 +1,27 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2026-01-13T11:13:01+07:00",
+  "id": "mahasiswa-html",
+  "duration": 0,
+  "title": "Mahasiswa",
+  "authors": "Hasyim Asyari",
+  "summary": "Panduan Wiga Mobile Khusus Mahasiswa",
+  "source": "mahasiswa.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "mahasiswa"
+  ],
+  "tags": [
+    "absensi",
+    "krs",
+    "login",
+    "registrasi"
+  ],
+  "url": "mahasiswa-html"
+}

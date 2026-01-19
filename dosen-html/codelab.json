@@ -1,0 +1,27 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2026-01-18T20:51:21+07:00",
+  "id": "dosen-html",
+  "duration": 0,
+  "title": "Mahasiswa",
+  "authors": "Hasyim Asyari",
+  "summary": "Panduan Wiga Mobile Khusus Dosen",
+  "source": "dosen.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "dosen"
+  ],
+  "tags": [
+    "administrasi",
+    "jurnalperkuliahan",
+    "login",
+    "penilaian"
+  ],
+  "url": "dosen-html"
+}

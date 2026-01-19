@@ -1,0 +1,257 @@
+/* ======================================================
+   ROOT COLOR & GLOBAL
+====================================================== */
+:root {
+  --primary: #f97316;
+  --primary-soft: #ffedd5;
+  --dark: #1f2933;
+  --gray: #6b7280;
+  --light: #f9fafb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* ======================================================
+   CONTAINER
+====================================================== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ======================================================
+   NAVBAR
+====================================================== */
+.navbar {
+  background: white;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+/* ======================================================
+   HERO SECTION (GEDUNG + GRADIENT ORANGE)
+====================================================== */
+.hero {
+  background:
+    linear-gradient(
+      rgba(249, 115, 22, 0.85),
+      rgba(249, 115, 22, 0.65)
+    ),
+    url('../img/gedung.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 5rem 1rem;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  max-width: 720px;
+  margin: auto;
+  backdrop-filter: blur(2px);
+}
+
+/* LOGO */
+.hero-logo {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+/* TITLE & TEXT */
+.hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  opacity: 0.95;
+  margin-bottom: 1.8rem;
+}
+
+/* BUTTON HERO */
+.btn-primary {
+  background: white;
+  color: var(--primary);
+  padding: .8rem 1.8rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  box-shadow: 0 10px 25px rgba(0,0,0,.2);
+  transition: all .3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0,0,0,.25);
+}
+
+/* ======================================================
+   SECTION
+====================================================== */
+.section {
+  padding: 3.5rem 0;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* ======================================================
+   CARD MODUL
+====================================================== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  padding: 1.6rem;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,.05);
+  transition: all .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.08);
+}
+
+.card h3 {
+  margin-bottom: .5rem;
+}
+
+.card p {
+  color: var(--gray);
+  margin-bottom: 1.2rem;
+}
+
+/* BUTTON OUTLINE */
+.btn-outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: .55rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all .3s ease;
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* ======================================================
+   FOOTER
+====================================================== */
+.footer {
+  background: var(--dark);
+  color: white;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  text-align: center;
+  font-size: .9rem;
+  opacity: 0.9;
+}
+
+/* ======================================================
+   HERO ANIMATION (FADE + SLIDE UP)
+====================================================== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content > * {
+  opacity: 0;
+  animation: fadeUp 1s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+/* DELAY BERURUTAN */
+.hero-logo {
+  animation-delay: 0.2s;
+}
+
+.hero h1 {
+  animation-delay: 0.4s;
+}
+
+.hero p {
+  animation-delay: 0.6s;
+}
+
+.hero .btn-primary {
+  animation-delay: 0.8s;
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-logo {
+    width: 100px;
+  }
+}
